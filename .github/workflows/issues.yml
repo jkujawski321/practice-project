@@ -1,0 +1,8 @@
+name: Issue tracker
+on: issues
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: New issue or issue was modified
+        run: echo "Triggered by ${{ github.event_name }}"
